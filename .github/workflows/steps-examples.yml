@@ -3,7 +3,7 @@ on:
   push
 
 jobs:
-  jobx:
+  marketplace:
     runs-on: ubuntu-latest
     steps:
       - name: configuração do node (pesquisar no marketplace...)
