@@ -1,18 +1,12 @@
-name: jobs examples
+name: steps examples
 on:
-push
+  push
+
 jobs:
-job1:
-runs-on: ubuntu-latest
-steps:
-- name: step do job1
-run: echo Hello, world! job1.
-job2:
-runs-on: ubuntu-latest
-steps:
-- name: step do job2
-run: echo Hello, world! Job2.
-Faça o commit das alterações.
-Acesse a seção Actions.
-Selecione o workflow criado.
-Verifique os detalhes do workflow e respectivos jobs.
+  jobx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: configuração do node (pesquisar no marketplace...)
+        uses: actions/setup-node@v4
+      - name: verification of node version
+        run: node --version
