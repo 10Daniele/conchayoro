@@ -31,6 +31,7 @@ jobs:
 
   producao:
     runs-on: ubuntu-latest
+    environment: producao
     steps:
     - uses: actions/checkout@v3
     - uses: actions/upload-artifact@v3
