@@ -12,7 +12,7 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: deploy
-        path: index.html
+        path: homologacao.html
 
   deploy:
     runs-on: ubuntu-latest
@@ -27,5 +27,5 @@ jobs:
     - uses: actions/download-artifact@v3
       with:
         name: deploy
-        path: index.html
-    - run: aws s3 cp index.html s3://$BUCKET_HOMOLOGACAO --recursive --acl public-read
+        path: homologacao.html
+    - run: aws s3 cp homologacao.html s3://$BUCKET_HOMOLOGACAO --recursive --acl public-read
