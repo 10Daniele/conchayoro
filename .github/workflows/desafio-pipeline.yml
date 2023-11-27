@@ -41,7 +41,6 @@ jobs:
   
   deploy-producao:
     runs-on: ubuntu-latest
-    environment: producao
     needs: producao
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
