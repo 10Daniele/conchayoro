@@ -1,10 +1,7 @@
 name: desafio-pipeline
 
 on:
-  workflow_dispatch:
-    jobs: producao
-  push:
-    jobs: homologacao
+  push
   
 jobs:
   homologacao:
@@ -42,6 +39,9 @@ jobs:
         name: deploy-producao
         path: producao.html
 
+on:
+  workflow_dispatch
+  
   deploy-producao:
     runs-on: ubuntu-latest
     needs: producao
