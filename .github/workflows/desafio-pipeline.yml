@@ -1,11 +1,11 @@
 name: desafio-pipeline
 
 on:
-  push:
-    jobs: homologacao
   workflow_dispatch:
     jobs: producao
-
+  push:
+    jobs: homologacao
+  
 jobs:
   homologacao:
     runs-on: ubuntu-latest
