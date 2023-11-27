@@ -47,7 +47,7 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
       AWS_EC2_METADATA_DISABLED: true
-      BUCKET_HOMOLOGACAO: ${{ vars.BUCKET_PRODUCAO }}
+      BUCKET_PRODUCAO: ${{ vars.BUCKET_PRODUCAO }}
     steps:
     - uses: actions/download-artifact@v3
       with:
