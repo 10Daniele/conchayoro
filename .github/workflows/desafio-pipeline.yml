@@ -53,4 +53,4 @@ jobs:
       with:
         name: deploy-producao
         path: producao.html
-    - run: aws s3 cp homologacao.html s3://$BUCKET_PRODUCAO --recursive --acl public-read
+    - run: aws s3 cp producao.html s3://$BUCKET_PRODUCAO --recursive --acl public-read
