@@ -38,9 +38,6 @@ jobs:
       with:
         name: deploy-producao
         path: producao.html
-
-on:
-  workflow_dispatch
   
   deploy-producao:
     runs-on: ubuntu-latest
