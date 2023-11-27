@@ -12,6 +12,7 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: deploy
+        path: index.html
 
   deploy:
     runs-on: ubuntu-latest
