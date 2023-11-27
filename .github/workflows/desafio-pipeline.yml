@@ -2,7 +2,9 @@ name: desafio-pipeline
 
 on:
   push:
-    branches: [ main ]
+    jobs: homologacao
+  workflow_dispatch:
+    jobs: producao
 
 jobs:
   homologacao:
